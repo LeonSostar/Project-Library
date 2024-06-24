@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" defer>
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <h1 class="title">My Library</h1>
+        </div>
+        <div class="right">
+            <button id="openModalButton">Add Book</button>
+    </header>
+    <main>
+        <div class="container">
+            <div id="cardContainer"></div>
+            <div id="bookModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Add a New Book</h2>
+                    <input type="text" id="modalBookTitle" placeholder="Enter Book Title">
+                    <input type="text" id="modalBookAuthor" placeholder="Enter Book Author"></textarea>
+                    <input type="text" id="modalBookPages" placeholder="Enter Number of Pages">
+                    <label>
+                        Already read? <input type="checkbox" id="modalBookRead">
+                    </label>
+                    <button id="modalAddBookButton">Add Book</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+</html>
